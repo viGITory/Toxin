@@ -1,0 +1,77 @@
+.fonts {
+	max-width: 405px;
+
+	&__item {
+		margin-bottom: 50px;
+		display: grid;
+		grid-template-columns: 35px auto;
+		grid-column-gap: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		margin: 0;
+
+		font-family: 'Montserrat', sans-serif;
+		text-align: right;
+		text-transform: uppercase;
+		font-weight: 400;
+		color: rgba(31, 32, 65, 0.25);
+
+		&--h1 {
+			font-size: 24px;
+			line-height: 29.26px;
+		}
+
+		&--h2 {
+			font-size: 19px;
+			line-height: 23.16px;
+		}
+
+		&--h3 {
+			font-size: 12px;
+			line-height: 14.63px;
+		}
+
+		&--body {
+			font-size: 14px;
+			line-height: 24px;
+			text-transform: none;
+		}
+	}
+
+	&__description {
+		margin: 0;
+
+		&--h1 {
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		&--h2 {
+			font-weight: 700;
+			font-size: 19px;
+			line-height: 24px;
+		}
+
+		&--h3 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 12px;
+			line-height: 14.63px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		&--body {
+			max-width: 290px;
+
+			color: rgba(31, 32, 65, 0.75);
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+}

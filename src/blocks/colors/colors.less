@@ -1,0 +1,68 @@
+.colors {
+	&__item {
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__item-color {
+		margin-right: 40px;
+		min-width: 70px;
+		width: 70px;
+		height: 70px;
+
+		background-color: gray;
+		border-radius: 6px;
+
+		&--shade100 {
+			background-color: rgba(31, 32, 65, 1);
+		}
+
+		&--shade75 {
+			background-color: rgba(31, 32, 65, 0.75);
+		}
+
+		&--shade50 {
+			background-color: rgba(31, 32, 65, 0.50);
+		}
+
+		&--shade25 {
+			background-color: rgba(31, 32, 65, 0.25);
+		}
+
+		&--shade5 {
+			background-color: rgba(31, 32, 65, 0.05);
+		}
+
+		&--purple {
+			background-color: rgba(188, 156, 255, 1);
+		}
+
+		&--green {
+			background-color: rgba(111, 207, 151, 1);
+		}
+	}
+
+	&__item-description {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+
+		font-size: 19px;
+		line-height: 28.5px;
+
+	}
+
+	&__description-name {
+		font-weight: 700;
+	}
+
+	&__description-number {
+		text-transform: uppercase;
+	}
+}
