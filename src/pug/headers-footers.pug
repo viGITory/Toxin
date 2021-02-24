@@ -1,0 +1,135 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="")
+		//- OPEN GRAPH ДЛЯ СОЦСЕТЕЙ
+		include ../blocks/opengraph/opengraph.pug
+		title Headers&footers
+		link(rel="icon" href="#" type="image/png" sizes="32x32")
+		link(rel='preconnect' href='https://fonts.gstatic.com')
+
+		link(href='https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap' rel='stylesheet')
+		link(rel='preconnect' href='https://fonts.gstatic.com')
+
+		link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' rel='stylesheet')
+
+		link(rel="stylesheet" href="style.css")
+	body.page-headers-footers.page
+		h1.visually-hidden Образцы header и footer сайта
+		section.page-headers-footers__item
+			h2.visually-hidden Образец header
+			header.main-header
+				div.container
+					div.main-header__inner
+						a.logo(href="#")
+							img.logo__icon(src="img/logo.svg" alt="Логотип Toxin")
+						nav.main-nav
+							ul.main-menu
+								li.main-menu__item
+									a.main-menu__link(href="#") О нас
+								li.main-menu__item
+									a.main-menu__link.main-menu__link--arrow(href="#") Услуги
+								li.main-menu__item
+									a.main-menu__link(href="#") Вакансии
+								li.main-menu__item
+									a.main-menu__link(href="#") Новости
+								li.main-menu__item
+									a.main-menu__link.main-menu__link--arrow(href="#") Соглашения
+								li.main-menu__item
+									a.main-menu__link.button.button--enter(href="#") Войти
+								li.main-menu__item
+									a.main-menu__link.button.button--registration(href="#") Зарегистрироваться
+
+		section.page-headers-footers__item
+			h2.visually-hidden Образец header
+			header.main-header
+				div.container
+					div.main-header__inner
+						a.logo(href="")
+							img.logo__icon(src="img/logo.svg" alt="Логотип Toxin")
+						nav.main-nav
+							ul.main-menu
+								li.main-menu__item
+									a.main-menu__link(href="#") О нас
+								li.main-menu__item
+									a.main-menu__link.main-menu__link--arrow(href="#") Услуги
+								li.main-menu__item
+									a.main-menu__link(href="#") Вакансии
+								li.main-menu__item
+									a.main-menu__link(href="#") Новости
+								li.main-menu__item
+									a.main-menu__link.main-menu__link--arrow(href="#") Соглашения
+								li.main-menu__item
+									a.main-menu__link.main-menu__link--separator(href="#") Юлий Цезарь
+
+		section.page-headers-footers__item
+			h2.visually-hidden Образец footer
+			footer.main-footer
+				div.main-footer__top
+					div.container
+						div.main-footer__top-inner
+							div.main-footer__logo-group
+								a.main-footer__logo.logo(href="#")
+									img.logo__icon(src="img/logo.svg" alt="Логотип Toxin")
+								p.main-footer__logo-description Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+
+							div.main-footer__group-item
+								h3.main-footer__title Навигация
+								ul.main-footer__list
+									li.main-footer__list-item О нас
+									li.main-footer__list-item Новости
+									li.main-footer__list-item Служба поддержки
+									li.main-footer__list-item Услуги
+
+							div.main-footer__group-item
+								h3.main-footer__title О нас
+								ul.main-footer__list
+									li.main-footer__list-item О сервисе
+									li.main-footer__list-item Наша команда
+									li.main-footer__list-item Вакансии
+									li.main-footer__list-item Инвесторы
+
+							div.main-footer__group-item
+								h3.main-footer__title Служба поддержки
+								ul.main-footer__list
+									li.main-footer__list-item Соглашения
+									li.main-footer__list-item Сообщества
+									li.main-footer__list-item Связь с нами
+
+							div.main-footer__subscribe-group
+								h3.main-footer__title Подписка
+								p.main-footer__subscribe-description Получайте специальные предложения и новости сервиса
+								div.main-footer__input-text
+									label.main-footer__label.visually-hidden(for="input-subscibe") Введите Email
+									input.input-text.input-text--subscribe(type="text" id="input-subscibe" placeholder="Email")
+				div.main-footer__bottom
+					div.container
+						div.main-footer__bottom-inner
+							p.copyright Copyright © 2018 Toxin отель. Все права зачищены.
+							ul.social
+								li.social__item
+									a.social__link.social__link--twitter(href="#") Логотип Twitter
+								li.social__item
+									a.social__link.social__link--facebook(href="#") Логотип Facebook
+								li.social__item
+									a.social__link.social__link--instagram(href="#") Логотип Instagram
+
+		section.page-headers-footers__item
+			h2.visually-hidden Образец footer
+			footer.footer-small
+				div.container
+					div.footer-small__inner
+						div.footer-small__logo
+							a.logo(href="#")
+								img(src="img/logo.svg" alt="Логотип Toxin")
+						div.footer-small__copyright
+							p.copyright Copyright © 2018 Toxin отель. Все права зачищены.
+						ul.social
+							li.social__item
+								a.social__link.social__link--twitter(href="#") Логотип Twitter
+							li.social__item
+								a.social__link.social__link--facebook(href="#") Логотип Facebook
+							li.social__item
+								a.social__link.social__link--instagram(href="#") Логотип Instagram
