@@ -1,5 +1,5 @@
 .page-typography {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   min-width: 320px;
   max-width: 1920px;
@@ -69,19 +69,19 @@
 .colors__description-number {
   text-transform: uppercase;
 }
-.fonts {
+.types {
   max-width: 405px;
 }
-.fonts__item {
+.types__item {
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 35px auto;
   grid-column-gap: 30px;
 }
-.fonts__item:last-child {
+.types__item:last-child {
   margin-bottom: 0;
 }
-.fonts__title {
+.types__title {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   text-align: right;
@@ -89,44 +89,44 @@
   font-weight: 400;
   color: rgba(31, 32, 65, 0.25);
 }
-.fonts__title--h1 {
+.types__title--h1 {
   font-size: 24px;
   line-height: 29.26px;
 }
-.fonts__title--h2 {
+.types__title--h2 {
   font-size: 19px;
   line-height: 23.16px;
 }
-.fonts__title--h3 {
+.types__title--h3 {
   font-size: 12px;
   line-height: 14.63px;
 }
-.fonts__title--body {
+.types__title--body {
   font-size: 14px;
   line-height: 24px;
   text-transform: none;
 }
-.fonts__description {
+.types__description {
   margin: 0;
 }
-.fonts__description--h1 {
+.types__description--h1 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
-.fonts__description--h2 {
+.types__description--h2 {
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
 }
-.fonts__description--h3 {
+.types__description--h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   line-height: 14.63px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.fonts__description--body {
+.types__description--body {
   max-width: 290px;
   color: rgba(31, 32, 65, 0.75);
   font-size: 14px;
