@@ -3,13 +3,64 @@
 	padding: 0;
 	min-width: 320px;
 
-	font-family: 'Montserrat', Arial, sans-serif;
-	color: rgba(31, 32, 65, 1);
+	font-family: @montserrat, Arial, sans-serif;
+	color: @darkblue;
+
+	&--main {
+		// display: flex;
+		// flex-direction: column;
+		// height: 100vh;
+	}
 
 	&__typography-inner {
 		padding-top: 145px;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+	}
+
+	&__header {
+		// flex: 0 0 auto;
+	}
+
+	&__main {
+		margin: 0 auto;
+		width: 100%;
+		// flex: 1 0 auto;
+
+		background: url(img/background.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	&__main-inner {
+		padding-top: 140px;
+		min-height: 830px;
+    height: 100%;
+		position: relative;
+	}
+
+	&__form {
+		width: 100px;
+		height: 100px;
+	}
+
+	&__main-title {
+		margin: 0;
+		padding: 0;
+		max-width: 300px;
+    right: 0;
+    bottom: 18px;
+		position: absolute;
+
+		font-size: 14px;
+		line-height: 24px;
+		color: @darkblue75;
+		text-align: right;
+	}
+
+	&__footer {
+		// flex: 0 0 auto;
 	}
 }

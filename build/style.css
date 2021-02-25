@@ -11,6 +11,36 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.page__main {
+  margin: 0 auto;
+  width: 100%;
+  background: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.page__main-inner {
+  padding-top: 140px;
+  min-height: 830px;
+  height: 100%;
+  position: relative;
+}
+.page__form {
+  width: 100px;
+  height: 100px;
+}
+.page__main-title {
+  margin: 0;
+  padding: 0;
+  max-width: 300px;
+  right: 0;
+  bottom: 18px;
+  position: absolute;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-align: right;
+}
 .container {
   margin: 0 auto;
   padding: 0 10px;
@@ -135,12 +165,91 @@ input[type='radio'].visually-hidden {
   right: -8px;
   bottom: -8px;
   left: -8px;
-  border: 8.5px solid #fff;
+  border: 9px solid #fff;
   border-radius: 0.9rem;
 }
 .button--registration {
   color: #ffffff;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.button--search {
+  width: 100%;
+  height: 44px;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.search-form {
+  min-width: 380px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.search-form__inner {
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+.search-form__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1f2041;
+}
+.search-form__guests {
+  margin-top: 20px;
+  margin-bottom: 30.44px;
+}
+.search-form__button {
+  margin: 0 auto;
+  display: block;
+}
+.date-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.date-group__item {
+  max-width: 150px;
+  position: relative;
+}
+.date-group__label {
+  margin-bottom: 5.44px;
+  display: block;
+  font-size: 12px;
+  line-height: 14.63px;
+  font-weight: 700;
+  color: #1f2041;
+  text-transform: uppercase;
+}
+.date-group__button {
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+.date-group__button::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  width: 6.5px;
+  height: 6.5px;
+  border: 2px solid rgba(31, 32, 65, 0.5);
+  border-top-width: 0;
+  border-left-width: 0;
+  transform: rotate(45deg);
 }
 .main-footer {
   background-color: #ffffff;
@@ -221,8 +330,6 @@ input[type='radio'].visually-hidden {
   padding-left: 15px;
   width: 100%;
   height: 44px;
-  color: rgba(31, 32, 65, 0.25);
-  background: url(img/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center right 14px;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -231,10 +338,22 @@ input[type='radio'].visually-hidden {
   outline: none;
 }
 .input-text::placeholder {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-size: 14px;
-  line-height: 24px;
+}
+.input-text--subscribe {
+  background-image: url(img/arrow-right.svg);
+}
+.input-text--subscribe::placeholder {
   color: rgba(31, 32, 65, 0.25);
+  line-height: 24px;
+}
+.input-text--date {
+  text-transform: uppercase;
+}
+.input-text--date::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 18px;
 }
 .copyright {
   margin: 0;
@@ -294,7 +413,7 @@ input[type='radio'].visually-hidden {
   margin-bottom: 25px;
 }
 .colors {
-  font-family: 'Quicksans', Arial, sans-serif;
+  font-family: 'Quicksand', Arial, sans-serif;
 }
 .colors__item {
   margin-bottom: 20px;
@@ -349,7 +468,7 @@ input[type='radio'].visually-hidden {
 }
 .types {
   max-width: 405px;
-  font-family: 'Quicksans', Arial, sans-serif;
+  font-family: 'Quicksand', Arial, sans-serif;
 }
 .types__item {
   margin-bottom: 50px;
@@ -404,7 +523,8 @@ input[type='radio'].visually-hidden {
   text-transform: uppercase;
 }
 .types__description--body {
-  max-width: 290px;
+  max-width: 301px;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <title>Toxin</title>
+    <link rel="icon" href="#" type="image/png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page">
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header__inner"><a class="logo" href="#"><img class="logo__icon" src="img/logo.svg" alt="Логотип Toxin"></a>
+          <nav class="main-nav">
+            <ul class="main-menu">
+              <li class="main-menu__item"><a class="main-menu__link" href="#">О нас</a></li>
+              <li class="main-menu__item"><a class="main-menu__link main-menu__link--arrow" href="#">Услуги</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Вакансии</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Новости</a></li>
+              <li class="main-menu__item"><a class="main-menu__link main-menu__link--arrow" href="#">Соглашения</a></li>
+              <li class="main-menu__item"><a class="main-menu__link button button--enter" href="#">Войти</a></li>
+              <li class="main-menu__item"><a class="main-menu__link button button--registration" href="#">Зарегистрироваться</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page__main">
+      <div class="container">
+        <div class="page__main-inner">
+          <h1 class="visually-hidden">Поиск номеров в отелях</h1>
+          <div class="page__form">
+            <form class="search-form">
+              <div class="search-form__inner">
+                <h2 class="search-form__title">Найдём номера под ваши пожелания</h2>
+                <div class="date-group">
+                  <div class="date-group__item">
+                    <label class="date-group__label" for="input-arrival">Прибытие</label>
+                    <input class="input-text input-text--date" type="text" id="input-arrival" placeholder="дд.мм.гггг">
+                    <button class="date-group__button" type="button">Открыть календарь</button>
+                  </div>
+                  <div class="date-group__item">
+                    <label class="date-group__label" for="input-departure">Выезд</label>
+                    <input class="input-text input-text--date" type="text" id="input-departure" placeholder="дд.мм.гггг">
+                    <button class="date-group__button" type="button">Открыть календарь</button>
+                  </div>
+                </div>
+                <div class="search-form__guests">
+                  <label class="search-form__label">Гости</label>
+                  <input class="input-text input-text--guests">
+                </div>
+                <button class="search-form__button button button--search">Подобрать номер</button>
+              </div>
+            </form>
+          </div>
+          <p class="page__main-title">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__top">
+        <div class="container">
+          <div class="main-footer__top-inner">
+            <div class="main-footer__logo-group"><a class="main-footer__logo logo" href="#"><img class="logo__icon" src="img/logo.svg" alt="Логотип Toxin"></a>
+              <p class="main-footer__logo-description">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+            </div>
+            <div class="main-footer__group-item">
+              <h3 class="main-footer__title">Навигация</h3>
+              <ul class="main-footer__list">
+                <li class="main-footer__list-item">О нас</li>
+                <li class="main-footer__list-item">Новости</li>
+                <li class="main-footer__list-item">Служба поддержки</li>
+                <li class="main-footer__list-item">Услуги</li>
+              </ul>
+            </div>
+            <div class="main-footer__group-item">
+              <h3 class="main-footer__title">О нас</h3>
+              <ul class="main-footer__list">
+                <li class="main-footer__list-item">О сервисе</li>
+                <li class="main-footer__list-item">Наша команда</li>
+                <li class="main-footer__list-item">Вакансии</li>
+                <li class="main-footer__list-item">Инвесторы</li>
+              </ul>
+            </div>
+            <div class="main-footer__group-item">
+              <h3 class="main-footer__title">Служба поддержки</h3>
+              <ul class="main-footer__list">
+                <li class="main-footer__list-item">Соглашения</li>
+                <li class="main-footer__list-item">Сообщества</li>
+                <li class="main-footer__list-item">Связь с нами</li>
+              </ul>
+            </div>
+            <div class="main-footer__subscribe-group">
+              <h3 class="main-footer__title">Подписка</h3>
+              <p class="main-footer__subscribe-description">Получайте специальные предложения и новости сервиса</p>
+              <div class="main-footer__input-text">
+                <label class="main-footer__label visually-hidden" for="input-subscibe">Введите Email</label>
+                <input class="input-text input-text--subscribe" type="text" id="input-subscibe" placeholder="Email">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-footer__bottom">
+        <div class="container">
+          <div class="main-footer__bottom-inner">
+            <p class="copyright">Copyright © 2018 Toxin отель. Все права зачищены.</p>
+            <ul class="social">
+              <li class="social__item"><a class="social__link social__link--twitter" href="#">Логотип Twitter</a></li>
+              <li class="social__item"><a class="social__link social__link--facebook" href="#">Логотип Facebook</a></li>
+              <li class="social__item"><a class="social__link social__link--instagram" href="#">Логотип Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
