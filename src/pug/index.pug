@@ -46,19 +46,21 @@ html(lang="ru")
 					div.page__form
 						form.search-form
 							div.search-form__inner
-								h2.search-form__title Найдём номера под ваши пожелания
+								h2.search-form__title.heading.heading--h2 Найдём номера под ваши пожелания
 								div.date-group
 									div.date-group__item
-										label.date-group__label(for="input-arrival") Прибытие
+										label.heading.heading--h3(for="input-arrival") Прибытие
 										input.input-text.input-text--date(type="text" id="input-arrival" placeholder="дд.мм.гггг")
-										button.date-group__button(type="button") Открыть календарь
+										button.arrow-down(type="button") Открыть календарь
 									div.date-group__item
-										label.date-group__label(for="input-departure") Выезд
+										label.heading.heading--h3(for="input-departure") Выезд
 										input.input-text.input-text--date(type="text" id="input-departure" placeholder="дд.мм.гггг")
-										button.date-group__button(type="button") Открыть календарь
+										button.arrow-down(type="button") Открыть календарь
 								div.search-form__guests
-									label.search-form__label Гости
-									input.input-text.input-text--guests
+									label.heading.heading--h3(for="input-guests") Гости
+									input.input-text.input-text--guests(type="text" id="input-guests" placeholder="Сколько гостей")
+									button.arrow-down(type="button") Сколько гостей
+
 								button.search-form__button.button.button--search Подобрать номер
 
 					p.page__main-title Лучшие номера для вашей работы, отдыха и просто вдохновения
@@ -75,25 +77,36 @@ html(lang="ru")
 						div.main-footer__group-item
 							h3.main-footer__title Навигация
 							ul.main-footer__list
-								li.main-footer__list-item О нас
-								li.main-footer__list-item Новости
-								li.main-footer__list-item Служба поддержки
-								li.main-footer__list-item Услуги
+								li.main-footer__list-item
+									a.main-footer__link(href="#") О нас
+								li.main-footer__list-item
+									a.main-footer__link(href="#") Новости
+								li.main-footer__list-item
+									a.main-footer__link(href="#") Служба поддержки
+								li.main-footer__list-item
+									a.main-footer__link(href="#") Услуги
 
 						div.main-footer__group-item
 							h3.main-footer__title О нас
 							ul.main-footer__list
-								li.main-footer__list-item О сервисе
-								li.main-footer__list-item Наша команда
-								li.main-footer__list-item Вакансии
-								li.main-footer__list-item Инвесторы
+								li.main-footer__list-item
+									a.main-footer__link(href="#") О сервисе
+								li.main-footer__list-item
+									a.main-footer__link(href="#") Наша команда
+								li.main-footer__list-item
+									a.main-footer__link(href="#") Вакансии
+								li.main-footer__list-item
+									a.main-footer__link(href="#") Инвесторы
 
 						div.main-footer__group-item
 							h3.main-footer__title Служба поддержки
 							ul.main-footer__list
-								li.main-footer__list-item Соглашения
-								li.main-footer__list-item Сообщества
-								li.main-footer__list-item Связь с нами
+								li.main-footer__list-item
+									a.main-footer__link(href="#") Соглашения
+								li.main-footer__list-item
+									a.main-footer__link(href="#") Сообщества
+								li.main-footer__list-item
+									a.main-footer__link(href="#") Связь с нами
 
 						div.main-footer__subscribe-group
 							h3.main-footer__title Подписка
