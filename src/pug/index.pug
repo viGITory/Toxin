@@ -22,7 +22,7 @@ html(lang="ru")
 				div.main-header__inner
 					a.logo(href="#")
 						img.logo__icon(src="img/logo.svg" alt="Логотип Toxin")
-					nav.main-nav
+					nav.main-header__nav
 						ul.main-menu
 							li.main-menu__item
 								a.main-menu__link(href="#") О нас
@@ -49,16 +49,16 @@ html(lang="ru")
 								h2.search-form__title.heading.heading--h2 Найдём номера под ваши пожелания
 								div.date-group
 									div.date-group__item
-										label.heading.heading--h3(for="input-arrival") Прибытие
+										label.search-form__label.heading.heading--h3(for="input-arrival") Прибытие
 										input.input-text.input-text--date(type="text" id="input-arrival" placeholder="дд.мм.гггг")
 										button.arrow-down(type="button") Открыть календарь
 									div.date-group__item
-										label.heading.heading--h3(for="input-departure") Выезд
+										label.search-form__label.heading.heading--h3(for="input-departure") Выезд
 										input.input-text.input-text--date(type="text" id="input-departure" placeholder="дд.мм.гггг")
 										button.arrow-down(type="button") Открыть календарь
 								div.search-form__guests
-									label.heading.heading--h3(for="input-guests") Гости
-									input.input-text.input-text--guests(type="text" id="input-guests" placeholder="Сколько гостей")
+									label.search-form__label.heading.heading--h3(for="input-guests") Гости
+									input.input-text(type="text" id="input-guests" placeholder="Сколько гостей")
 									button.arrow-down(type="button") Сколько гостей
 
 								button.search-form__button.button.button--search Подобрать номер
@@ -74,8 +74,8 @@ html(lang="ru")
 								img.logo__icon(src="img/logo.svg" alt="Логотип Toxin")
 							p.main-footer__logo-description Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
-						div.main-footer__group-item
-							h3.main-footer__title Навигация
+						div.main-footer__nav-item
+							h3.main-footer__title.heading.heading--h3 Навигация
 							ul.main-footer__list
 								li.main-footer__list-item
 									a.main-footer__link(href="#") О нас
@@ -86,8 +86,8 @@ html(lang="ru")
 								li.main-footer__list-item
 									a.main-footer__link(href="#") Услуги
 
-						div.main-footer__group-item
-							h3.main-footer__title О нас
+						div.main-footer__nav-item
+							h3.main-footer__title.heading.heading--h3 О нас
 							ul.main-footer__list
 								li.main-footer__list-item
 									a.main-footer__link(href="#") О сервисе
@@ -98,8 +98,8 @@ html(lang="ru")
 								li.main-footer__list-item
 									a.main-footer__link(href="#") Инвесторы
 
-						div.main-footer__group-item
-							h3.main-footer__title Служба поддержки
+						div.main-footer__nav-item
+							h3.main-footer__title.heading.heading--h3 Служба поддержки
 							ul.main-footer__list
 								li.main-footer__list-item
 									a.main-footer__link(href="#") Соглашения
@@ -109,7 +109,7 @@ html(lang="ru")
 									a.main-footer__link(href="#") Связь с нами
 
 						div.main-footer__subscribe-group
-							h3.main-footer__title Подписка
+							h3.main-footer__title.heading.heading--h3 Подписка
 							p.main-footer__subscribe-description Получайте специальные предложения и новости сервиса
 							div.main-footer__input-text
 								label.main-footer__label.visually-hidden(for="input-subscibe") Введите Email
